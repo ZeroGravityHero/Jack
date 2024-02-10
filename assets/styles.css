@@ -365,7 +365,7 @@ body{
 --------------*/
 
 .tokenomics {
-    padding-top: 10vw;
+    padding-top: 5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -578,7 +578,7 @@ footer .links a img {
         width: 100%;
         height: auto;
         display: block;
-        /* margin-top: 100px; */
+        margin-top: 100px;
     }
     .control-btn {
         position: absolute;
@@ -592,7 +592,7 @@ footer .links a img {
     }
 
     .story .bg {
-        width: 60%;
+        width: 45%;
         position: absolute;
         z-index: 1;
     }
