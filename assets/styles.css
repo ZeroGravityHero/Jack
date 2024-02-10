@@ -1,0 +1,1025 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: demo;
+    src: url(fonts/Comic\ Kings.ttf);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    cursor: default;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: demo;
+    font-weight: 500;
+    letter-spacing: .1vw;
+    font-size: 2vw;
+    line-height: 120%;
+    transition: all .4s;
+    color: #ffffff;
+    /* -webkit-text-stroke: 2px #E73511;
+    -webkit-text-fill-color: #FFCD0F; */
+    -webkit-text-stroke: 1px #87CC23;
+    text-shadow: -0.15vw .15vw 0 rgba(0, 0, 0, 0.35);
+}
+
+h2:hover {
+    -webkit-text-stroke: 2px #ffffff;
+    color: #4A8102;
+    cursor: pointer;
+}
+
+p {
+    color: rgba(0, 0, 0, 1);
+    font-size: 1.4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    opacity: 1;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    font-size: 1vw;
+    line-height: 1.3vw;
+    color: #FFFFFF;
+}
+
+.logo {
+    max-width: 96px;
+    animation: bounceInDown 1s;
+}
+
+.btn {
+    width: 17.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: demo;
+}
+
+.btn img {
+    width: 100%;
+}
+
+.btn li {
+    list-style: none;
+    font-family: demo;
+    font-weight: 500;
+    letter-spacing: .1vw;
+    font-size: 1.7vw;
+    line-height: 2.5vw;
+    color: #ffffff;
+    /* -webkit-text-stroke: 2px #E73511;
+    -webkit-text-fill-color: #FFCD0F; */
+    -webkit-text-stroke: 1px #87CC23;
+    text-shadow: -0.15vw .15vw 0 rgba(0, 0, 0, 0.35);
+    transition: all .3s;
+    margin-top: -4.5vw;
+    opacity: 1;
+}
+
+.btn:hover li {
+    margin-top: -4.7vw;
+    color: #cc00ff;
+    text-shadow: 0 .15vw 0 #000000;
+    filter: drop-shadow(0.1vw .2vw 0px #f1f1f1);
+}
+
+body{
+    background: #2475B8;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar-toggle span {
+    display: block;
+    width: 7vw;
+    height: 1.5vw;
+    margin: 0.7vw;
+    background: linear-gradient(271.36deg, #8DE24D 50.01%, #0A4740 72.39%);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+
+.navbar-toggle span:nth-child(2) {
+    width: 5vw;
+}
+
+/* -------------------------------------------Navbar Management------------------
+-------------------- */
+
+.header {
+    padding: 0 3vw 0 3vw;
+    width: 100%;
+}
+
+.header .navbar {
+    border-radius: 2vw;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navbar .left-side-menu {
+    width: 30%;
+}
+
+.header .navbar .left-side-menu a {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    color: #B6DB12;
+    font-size: 3vw;
+    font-family: demo;
+    line-height: 3.5vw;
+    letter-spacing: -1.76px;
+    -webkit-text-stroke: 1.5px #000000;
+    transition: all 1s;
+}
+
+.header .navbar .left-side-menu a:hover {
+    color: #4A8102;
+}
+
+.centr-menu {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vw;
+}
+
+.header .centr-menu a {
+    width: 6%;
+    transition: all .3s;
+}
+
+.header .centr-menu a:hover {
+    transform: translateY(-.4vw);
+}
+
+.header .centr-menu a img {
+    width: 100%;
+}
+
+.header .centr-menu a:nth-child(1) {
+    animation: bounceInDown 1s;
+}
+
+.header .centr-menu a:nth-child(2) {
+    animation: bounceInDown 1.5s;
+}
+
+.header .centr-menu a:nth-child(3) {
+    animation: bounceInDown 2s;
+}
+
+/* --------------------------------hero-section--------------
+-------------------- */
+
+.hero-section {
+    width: 100%;
+    height: 306vw;
+    background-image: url(images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section .hero-img {
+    width: 45%;
+    margin-bottom: -4vw;
+    animation: tada 1.2s linear forwards;
+}
+
+.hero-section .btn {
+    animation: bounceInUp 2s;
+}
+
+@keyframes bo {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*------------------ about-us --------------
+-----------------*/
+
+.about {
+    width: 100%;
+    padding: 30vw;
+    padding-top: 35vw;
+    padding-bottom: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: backOutDown 2s alternate-reverse;
+}
+
+.about .bg {
+    width: 60%;
+    position: absolute;
+    z-index: 1;
+}
+
+.about p.first {
+    padding-top: 10vw;
+}
+
+.about p {
+    /* padding: 0 7vw; */
+    z-index: 1;
+    padding-top: 2vw;
+}
+
+.about p b {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.about .btn {
+    z-index: 1;
+    margin-top: 3vw;
+    animation: bounceIn 2s infinite alternate-reverse;
+}
+
+.about .btn:hover {
+    animation: none;
+}
+
+.map-img {
+    padding-top: 7vw;
+    width: 65%;
+    animation: shakeX 2s;
+}
+
+/*------------------ video --------------
+-----------------*/
+
+
+
+/*------------------ story --------------
+-----------------*/
+
+
+.story {
+    width: 100%;
+    padding: 35vw;
+    padding-top: 25vw;
+    padding-bottom: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: zoomIn 2s;
+}
+
+.story .bg {
+    width: 42%;
+    position: absolute;
+    z-index: 1;
+}
+
+.story p.first {
+    padding-top: 10vw;
+}
+
+.story p {
+    /* padding: 0 7vw; */
+    z-index: 1;
+    padding-top: 5vw;
+}
+
+.story .btn {
+    z-index: 1;
+    margin-top: 1vw;
+    animation: bounceIn 2s infinite alternate-reverse;
+}
+
+/*-------------------- tokenomics ---------------
+--------------*/
+
+.tokenomics {
+    padding-top: 33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.tokenomics img {
+    width: 100%;
+}
+
+.tokenomics p {
+    color: white;
+}
+
+.tokenomics .supply {
+    position: absolute;
+    top: 50vw;
+    padding: 0 10vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* -----------------------------------roadmap-------
+-------------- */
+
+.hero-2 {
+    width: 100%;
+    height: 180vw;
+    background: url(images/bg2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+    padding: 0% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map .heading {
+    width: 40%;
+}
+
+.map .road {
+    width: 100%;
+    padding-top: 10vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map .road img {
+    width: 85%;
+    height: auto;
+    animation: zoom 2s;
+}
+
+.map .road ul {
+    padding-left: 1.2vw;
+}
+
+.map .road ul li {
+    list-style: disc;
+    color: #FFF;
+    font-size: 1vw;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
+    opacity: 1;
+}
+
+.map .road .box {
+    position: absolute;
+}
+
+.map .road .box1 {
+    top: 18vw;
+    left: -7vw;
+}
+
+.map .road .box2 {
+    top: 27vw;
+    right: -2vw;
+}
+
+.map .road .box3 {
+    top: 51vw;
+    left: 8vw;
+}
+
+.map .road .box4 {
+    right: 0vw;
+    top: 75vw;
+}
+
+
+/*-------------------- socials ----------------
+-----------*/
+
+.socials {
+    width: 100%;
+    padding: 0 23vw;
+    padding-top: 25vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials .bg {
+    width: 70%;
+    position: absolute;
+    z-index: 1;
+}
+
+.socials p, .socials .btn {
+    z-index: 2;
+}
+
+.socials p {
+    padding-top: 17vw;
+    text-align: center;
+    padding-left: 10vw;
+}
+
+.socials .btn {
+    margin-left: 10vw;
+    margin-top: 1vw;
+}
+
+
+/*---------------------- footer ---------------------
+---------------*/
+
+footer {
+    width: 100%;
+    padding: 0 4vw;
+    padding-top: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+footer .links a img {
+    width: 3.5vw;
+}
+
+/* --------------------------------website Responsive--------------
+-------------------- */
+
+/* ----------------------------@ 1280px--------
+------- */
+
+@media (max-width: 1280px) {
+
+    /* -------------------------navbar 1280px--------------------------
+    ----------------------- */
+
+    .header {
+        padding: 1vw 3vw 0 3vw;
+    }
+
+    .header ,.navbar {
+        border-radius: 2vw;
+    }
+
+    .header .navbar .left-side-menu a {
+        font-size: 2.3vw;
+    }
+
+    .header .navbar .left-side-menu a img {
+        width: 20%;
+    }
+
+
+
+}
+
+/* ----------------------------@ 980px--------
+------- */
+
+@media (max-width: 980px) {
+
+    #video-container {
+        position: relative;
+        width: 60%; /* Set your desired width here */
+        margin: 0 auto;
+        bottom: -130px;
+
+    }
+    video {
+        width: 100%;
+        height: auto;
+        display: block;
+        /* margin-top: 100px; */
+    }
+    .control-btn {
+        position: absolute;
+        bottom: 10px;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.7);
+        border: none;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+}
+
+/* ----------------------------@ 600px--------
+------- */
+
+@media (max-width: 600px) {
+
+
+                #video-container {
+              position: relative;
+              width: 60%; /* Set your desired width here */
+              margin: 0 auto;
+              bottom: -10px;
+
+            }
+            video {
+              width: 100%;
+              height: auto;
+              display: block;
+              margin-top: 100px;
+            }
+            .control-btn {
+              position: absolute;
+              bottom: 10px;
+              z-index: 1;
+              background-color: rgba(255, 255, 255, 0.7);
+              border: none;
+              border-radius: 5px;
+              padding: 5px 10px;
+              cursor: pointer;
+            }
+
+
+    h1 {
+        -webkit-text-stroke: 1px #000000;
+    }
+
+    h2 {
+        font-size: 4vw;
+        line-height: 130%;
+    }
+
+    p {
+        font-size: 2.7vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        opacity: 1;
+    }
+
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    li {
+        list-style: none;
+        font-size: 1vw;
+        line-height: 1.3vw;
+        color: #FFFFFF;
+    }
+
+    .btn {
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .btn img {
+        width: 100%;
+    }
+
+    .btn li {
+        list-style: none;
+        font-family: demo;
+        font-weight: 500;
+        letter-spacing: .1vw;
+        font-size: 4vw;
+        text-shadow: -.5vw .5vw 0vw rgba(0, 0, 0, 0.35);
+        line-height: 6.5vw;
+        margin-top: -10vw;
+        opacity: 1;
+    }
+
+    .btn1 li {
+        color: #BFFF3A;
+    }
+
+    .btn:hover li {
+        margin-top: -10.5vw;
+        color: #227260 !important;
+        text-shadow: 0 .3vw 0 #000000;
+        filter: drop-shadow(0.1vw .6vw 0px #f1f1f1);
+    }
+
+    body{
+        background: #112818;
+    }
+
+    .navbar-toggle {
+        display: none;
+        cursor: pointer;
+    }
+
+    .navbar-toggle span {
+        display: block;
+        width: 7vw;
+        height: 1.5vw;
+        margin: 0.7vw;
+        background: linear-gradient(271.36deg, #8DE24D 50.01%, #0A4740 72.39%);
+        border-radius: 50px;
+        transition: all 0.5s;
+    }
+
+    .navbar-toggle span:nth-child(2) {
+        width: 5vw;
+    }
+
+    /* -------------------------------------------Navbar Management------------------
+    -------------------- */
+
+    .header {
+        padding: 1vw 3vw 0 3vw;
+        width: 100%;
+        animation: bounce 1s;
+        animation-iteration-count: 1;
+    }
+
+    .header .navbar {
+        padding: 2vw;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .navbar .left-side-menu {
+        width: 50%;
+    }
+
+    .header .navbar .left-side-menu a {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+        align-items: center;
+        color: #B6DB12;
+        font-size: 6vw;
+        font-family: demo;
+        line-height: 3.5vw;
+        letter-spacing: -1.76px;
+        -webkit-text-stroke: 1.5px #000000;
+        transition: all 1s;
+    }
+
+    .header .navbar .left-side-menu a:hover {
+        color: #4A8102;
+    }
+
+    .centr-menu {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2vw;
+    }
+
+    .header .centr-menu a {
+        width: 15%;
+        transition: all .3s;
+    }
+
+    .header .centr-menu a:hover {
+        transform: translateY(-1vw);
+    }
+
+    .header .centr-menu a img {
+        width: 100%;
+    }
+
+
+
+    /* --------------------------------hero-section--------------
+-------------------- */
+
+.hero-section {
+    width: 100%;
+    height: 465vw;
+}
+
+.hero-section .hero-img {
+    padding-top: 8vw;
+    width: 75%;
+    margin-bottom: -4vw;
+}
+
+/*------------------ about-us --------------
+-----------------*/
+
+.about {
+    width: 100%;
+    padding: 15vw;
+    padding-top: 40vw;
+    padding-bottom: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.about .bg {
+    width: 95%;
+    position: absolute;
+    z-index: 1;
+}
+
+.about p.first {
+    padding-top: 15vw;
+}
+
+.about p {
+    /* padding: 0 7vw; */
+    z-index: 1;
+    padding-top: 2vw;
+}
+
+.about .btn {
+    z-index: 1;
+    margin-top: 3vw;
+}
+
+.map-img {
+    padding-top: 25vw;
+    width: 85%;
+}
+
+/*------------------ story --------------
+-----------------*/
+
+
+.story {
+    width: 100%;
+    padding: 17vw;
+    padding-top: 25vw;
+    padding-bottom: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.story .bg {
+    width: 92%;
+    position: absolute;
+    z-index: 1;
+}
+
+.story p.first {
+    padding-top: 23vw;
+}
+
+.story p {
+    /* padding: 0 7vw; */
+    z-index: 1;
+    padding-top: 5vw;
+    font-size: 3vw;
+}
+
+.story .btn {
+    z-index: 1;
+    margin-top: 5vw;
+}
+
+/*-------------------- tokenomics ---------------
+--------------*/
+
+.tokenomics {
+    padding-top: 33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.tokenomics img {
+    width: 100%;
+}
+
+.tokenomics p {
+    color: white;
+}
+
+.tokenomics .supply {
+    position: absolute;
+    top: 50vw;
+    padding: 0 10vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+/* -----------------------------------roadmap-------
+-------------- */
+
+.hero-2 {
+    width: 100%;
+    height: 230vw;
+    margin-top: -10vw;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+    padding: 5% 15%;
+    padding-top: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map .heading {
+    width: 40%;
+}
+
+.map .road {
+    width: 100%;
+    padding-top: 10vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map .road img {
+    width: 85%;
+    height: auto;
+}
+
+.map .road ul {
+    padding-left: 1.2vw;
+}
+
+.map .road ul li {
+    list-style: disc;
+    color: #FFF;
+    font-size: 2.1vw;
+    font-family: 'Balsamiq Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    opacity: 1;
+}
+
+.map .road .box {
+    position: absolute;
+}
+
+.map .road .box1 {
+    top: 24vw;
+    left: -12vw;
+}
+
+.map .road .box2 {
+    top: 32vw;
+    right: -12vw;
+}
+
+.map .road .box3 {
+    top: 52vw;
+    left: -4vw;
+}
+
+.map .road .box4 {
+    right: -10vw;
+    top: 75vw;
+}
+
+
+/*-------------------- socials ----------------
+-----------*/
+
+.socials {
+    width: 100%;
+    padding: 0 9vw;
+    padding-top: 15vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials .bg {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.socials p, .socials .btn {
+    z-index: 2;
+}
+
+.socials p {
+    padding-top: 22vw;
+    text-align: center;
+    padding-left: 13vw;
+}
+
+.socials .btn {
+    margin-left: 10vw;
+    margin-top: 1vw;
+}
+
+
+/*---------------------- footer ---------------------
+---------------*/
+
+footer {
+    width: 100%;
+    padding: 12vw 4vw;
+    padding-bottom: 0;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+footer .links a img {
+    width: 6vw;
+}
+
+
+}
