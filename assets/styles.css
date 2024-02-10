@@ -314,7 +314,7 @@ body{
             .control-btn {
                 position: absolute;
                 bottom: 10px;
-                z-index: 1;
+                z-index: 999;
                 background-color: rgba(255, 255, 255, 0.7);
                 border: none;
                 border-radius: 5px;
@@ -591,8 +591,113 @@ footer .links a img {
         cursor: pointer;
     }
 
+    .story .bg {
+        width: 45%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tokenomics {
+        padding-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
     .tokenomics img {
-        width: 800px;
+        width: 50%;
+    }
+    
+    .tokenomics p {
+        color: white;
+    }
+    
+    .tokenomics .supply {
+        position: absolute;
+        top: 50vw;
+        padding: 0 10vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+/* roadmap */
+    
+    .hero-2 {
+        width: 100%;
+        height: 180vw;
+        background: url(images/bg2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .map {
+        width: 100%;
+        height: auto;
+        padding: 0% 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .map .heading {
+        width: 40%;
+    }
+    
+    .map .road {
+        width: 100%;
+        padding-top: 10vw;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .map .road img {
+        width: 85%;
+        height: auto;
+        animation: zoom 2s;
+    }
+    
+    .map .road ul {
+        padding-left: 1.2vw;
+    }
+    
+    .map .road ul li {
+        list-style: disc;
+        color: #FFF;
+        font-size: 1vw;
+        font-family: 'Balsamiq Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2vw;
+        opacity: 1;
+    }
+    
+    .map .road .box {
+        position: absolute;
+    }
+    
+    .map .road .box1 {
+        top: 18vw;
+        left: -7vw;
+    }
+    
+    .map .road .box2 {
+        top: 27vw;
+        right: -2vw;
+    }
+    
+    .map .road .box3 {
+        top: 51vw;
+        left: 8vw;
+    }
+    
+    .map .road .box4 {
+        right: 0vw;
+        top: 75vw;
     }
 }
 
@@ -916,7 +1021,7 @@ footer .links a img {
 .hero-2 {
     width: 100%;
     height: 230vw;
-    margin-top: -10vw;
+    margin-top: 80vw;
 }
 
 .map {
